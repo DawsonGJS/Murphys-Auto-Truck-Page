@@ -1,0 +1,70 @@
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+  background-color: rgba(0,0,0,.3);
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 6px;
+  text-align: center;
+  background-color: white;
+  color: black;
+  font-size: 30px;
+}
+
+ #logo {
+ 
+ height: 266px;
+ width: 750px;
+ }
+
+img {
+width:500px;
+height:250px;
+
+}
+.column {
+  float: left;
+   border: 3px solid black;
+   background-color: white;
+  padding: 10px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  background-color: white;
+  clear: both;
+  display: table;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1px 6px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}

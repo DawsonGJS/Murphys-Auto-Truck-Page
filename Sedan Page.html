@@ -1,0 +1,100 @@
+<html>
+<head>
+<title>Dawson Gates Murphy's Auto Sedan Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="SedanCSS.css">
+</head>
+<body>
+<div class="header">
+  <img id="logo" src ="Logo.png">
+</div>
+
+<h1>2022 Honda Civic</h1>
+
+<div id= "MainCarPic">
+<img src = "Cars/Civic.jpg">
+</div>
+
+<div id= "vehicleDescription">
+<h1>Description</h1>
+<p>Introducing the new 2022 Honda Civic! If you want a modern, fuel efficient car to get you where you need to go, the 2022 Honda Civic is a great choice for you! With a fuel economy of 39 mpg, the car will practically pay for itself for what you save in gas! With leather upholstery and 5 seats in the car, you can pack up the whole family and go anywhere in comfort. Not to mention that this car also comes with state-of-the-art bluetooth phone connectivity to you can listen to music, take and send phone calls and messages without having to look at your phone, and have GPS alerts come right through your car! For the fair price of $22,000, this could be yours. Call Murphy's Auto today!
+</div><br><br>
+
+<!--Accordion Code Start-->
+<button class="accordion">Mechanical Features</button>
+<div class="panel">
+  <ul>
+	<li>Front-Wheel Drive</li>
+	<li>12.4 Gallon Fuel Tank</li>
+	<li>Automatic Transmission</li>
+	</ul>
+</div>
+
+<button class="accordion">Entertainment Features</button>
+<div class="panel">
+  <ul>
+	<li>Radio with HandsFree Link that can connect to bluetooth devices</li>
+	<li>Radio options of Bluetooth device, AM/FM Radio, and USB Device</li>
+	<li>2 Door speakers and 2 Subwoofers positioned in the back of the car for an optimal sound experience</li>
+	</ul>
+</div>
+
+<button class="accordion">Engine Specifications</button>
+<div class="panel">
+	<ul>
+	<h2>Engine<hr></h2>
+	<li>2.0 L 4-cylinder</li>
+	</ul>
+
+	<ul>
+	<h2>Mileage</h2>
+	<li>Fuel Economy Est-Combined (MPG): 33</li>
+	<li>EPA Fuel Economy Est - City (MPG): 30</li>
+	<li>EPA Fuel Economy Est - Hwy (MPG): 37</li>
+	<li>Suggested Fuel Grade: 87 Octane</li>
+	</ul>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+<!--Accordion Code End-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="navbar">
+  <a href="#home" class="active">Home</a>
+  <a href="#locations">Locations</a>
+  <a href="#contact">Contact Us</a>
+
+
+
+</body>
+</html>
